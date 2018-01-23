@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Places-2-Eat</title>
+      
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+      
+    <!-- App Core CSS -->  
+    <link rel="stylesheet" href="styles/styles.css">      
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <!-- Google Fonts -->  
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+      
+    <!-- JQuery Refs -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>      
+    
+    <!-- Google Maps AP Refs -->  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXW5TxolN3o07--5Ykl30ZxE_aMUhoE1o&libraries=places&callback=initMap" async defer></script>            
+            <script>
+                $(document).ready(function() { 
+                        console.log("Inside onload function...");
+                        // set the focus on the textbox element.
+                        document.getElementById("pac-input-address").focus();
+                        $("#list-group").hide();
+                });
+            </script>            
+  </head>
+<!--- Navbar Component start --->
+<header>
+<nav class="navbar navbar-expand-lg" id="navbar-brand">
+  <span class="navbar-brand mb-0 h1">
+    <a class="navbar-brand" href="#" target="_blank">
+        <i class="fa fa-cutlery" aria-hidden="true"> <i class="fa fa-coffee" aria-hidden="true"></i>  Places-2-Eat</i>
+    </a>         
+  </span>
+</nav> 
+</header>
+<!-- Navbar component end. -->
+    
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col"><br/>
+        <!-- div class="pac-card" id="pac-card" -->
+          <!--div>
+            <div id="title">
+              Search Places-2-Eat
+            </div>
+            <div id="type-selector" class="pac-controls">
+              <input type="radio" name="type" id="changetype-all" checked="checked">
+              <label for="changetype-all">All</label>
+
+              <input type="radio" name="type" id="changetype-establishment">
+              <label for="changetype-establishment">Establishments</label>
+
+              <input type="radio" name="type" id="changetype-address">
+              <label for="changetype-address">Addresses</label>
+
+              <input type="radio" name="type" id="changetype-geocode">
+              <label for="changetype-geocode">Geocodes</label>
+            </div>
+            <div id="strict-bounds-selector" class="pac-controls">
+              <input type="checkbox" id="use-strict-bounds" value="">
+              <label for="use-strict-bounds">Strict Bounds</label>
+            </div>
+          </div-->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <div class="left-inner-addon"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <input type="text" class="form-control" id="pac-input-address" placeholder="My Location..."></div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class="left-inner-addon"><i class="fa fa-cutlery" aria-hidden="true"></i><input type="text" class="form-control" id="pac-input" placeholder="Search Restaurant or Cuisine..."></div>
+            </div>
+          </div>            
+        </div>
+        </div>
+        <div class="col-12">
+            <div id="map"></div>
+            <div id="infowindow-content">
+              <img src="" width="16" height="16" id="place-icon">
+              <span id="place-name"  class="title"></span><br>
+              <span id="place-address"></span>
+            </div>
+        </div>
+        </br>
+        <div class="col">
+            <!-- List group item begin -->
+            <div class="list-group" id="list-group">
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1" id="list-heading">List group item heading</h5>
+                    <small id="rhs-small-text"><span class="badge badge-primary badge-pill">3 days ago</span></small>
+                </div>
+                <p class="mb-1" id="list-group-details">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small id="footer-sm-text">Visit Website</small>
+              </a>
+            </div>            
+            <!-- List group item end -->
+        </div>
+      </div>
+    </div>
+            
+   <div class="container fluid"></div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

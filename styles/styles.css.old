@@ -1,0 +1,47 @@
+/* Featured card height */
+
+#featured {
+    color: black;
+    vertical-align: text-top;
+}
+
+
+#featured-card{
+        height: 250px;
+        color: #ffffff !important;    
+}
+
+body {
+    background-color: aliceblue !important;
+}
+
+/* Navbar style*/
+.navbar-default {
+    background-color: #038bd9 !important; 
+    color: #ffffff !important;
+}
+/* Navbar style */
+
+.spacer {
+    padding: 3%;
+}
+
+.carousel {
+  width:540px;
+  height:260px;
+}
+
+.center {
+    position:absolute;
+    height: X px;
+    width: Y px;
+    left:50%;
+    top:50%;
+    margin-top:- X/2 px;
+    margin-left:- Y/2 px;
+} 
+
+i {
+    text-align:center;
+}
+

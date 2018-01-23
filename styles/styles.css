@@ -1,0 +1,152 @@
+    /* Navbar style*/
+    .navbar {
+        background-color: #038bd9 !important; 
+        color: #ffffff !important;
+    }
+
+    .navbar-brand {
+        font-family: 'Risque', cursive; 
+        font-size: 20px;        
+        color: #ffffff !important;
+    }
+
+    #navbar-brand {
+        font-family: 'Risque', cursive; 
+        font-size: 20px;        
+        color: #ffffff !important;
+    }
+    /* Navbar style */
+
+    body {
+        /*font-family: 'Allerta';*/
+        font-size: 18px;
+        background-color: rgba(136,136,136,1);
+    }
+
+    #list-group {
+        font-size: 80%;
+    }
+
+    #list-heading, #rhs-small-text {
+        color: firebrick;
+    }
+
+    #list-group-details, #footer-sm-text {
+        color: blue;
+    }
+
+    /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+    #map {
+        /* height: 100%; */
+        height:400px;
+        width:100%;          
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    /* this is to customize the info window title after clicking on a marker */
+    #infowindow-content .title {
+        font-weight: bold;
+        color: crimson;
+    }
+
+    #infowindow-content {
+        display: none;
+        color: blue;
+    }
+
+    #map #infowindow-content {
+        display: inline;
+    }
+    /* customize the info window title end */
+
+/* the pac-card styling is for the styling of the input textboxes for address & place search */
+    .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+    }
+/* pac-card styling */
+
+    #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+    }
+
+    .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+    }
+
+    .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    /*
+    #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+    }
+    */
+
+    .pac-input-address { position: relative; }
+    .pac-input-address input { text-indent: 30px;}
+    .pac-input-address .fa-search { 
+      position: absolute;
+      top: 24px;
+      left: 7px;
+      font-size: 15px;
+    }
+
+
+    #pac-input:focus {
+        border-color: #4d90fe;
+    }
+
+    #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+    }
+
+    .left-inner-addon {
+        position: relative;
+        color: darkgrey;
+    }
+    .left-inner-addon input {
+        padding-left: 30px;    
+    }
+    .left-inner-addon i {
+        position: absolute;
+        padding: 10px 12px;
+        pointer-events: none;
+    }
+
+#form-row {
+    background-color: #038bd9 !important;    
+}

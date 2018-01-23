@@ -1,0 +1,104 @@
+Restaurant Finder - Web App:
+
+Case Studies:
+https://www.airbnb.com/
+https://www.foodspotting.com/find/in/Brakpan-1540
+https://www.citibikenyc.com/
+https://www.expedia.com/
+https://www.7-eleven.com/locator
+https://member.citibikenyc.com/map/
+
+
+References: 
+https://developers.google.com/places/web-service/get-api-key
+https://stackoverflow.com/questions/14343965/google-places-library-without-map
+https://maps.googleapis.com/maps/api/place/radarsearch/json?location=48.859294,2.347589&radius=5000&type=cafe&keyword=vegetarian&key=YOUR_API_KEY
+https://tutorials.botsfloor.com/build-a-bot-for-messenger-in-15-mins-with-chatfuel-8d28c1bdedbe
+https://help.chatfuel.com/telegram-messenger/getting-started/how-do-i-create-a-bot/
+https://tutorials.botsfloor.com/tagged/chatfuel
+https://bbvaopen4u.com/en/actualidad/how-develop-chatbot-facebook-messenger-chatfuel
+https://seirocss.com/docs/buttons
+https://cloud.google.com/dialogflow-enterprise/?hl=en_GB&_ga=2.61328620.-1320064495.1514558518 - Google Chatbot API Interface
+https://developers.google.com/maps/showcase/ <== Chek these out!
+https://developers.google.com/maps/documentation/javascript/ <== Chek these out!
+https://developers.google.com/maps/web-services/
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete
+https://developers.google.com/maps/documentation/javascript/places#TextSearchRequests
+https://developers.google.com/maps/documentation/javascript/tutorial
+https://developers.google.com/maps/documentation/javascript/custom-markers
+https://developers.google.com/maps/documentation/javascript/styling
+https://developers.google.com/maps/documentation/geocoding/start?hl=en_GB
+https://developers.google.com/maps/documentation/javascript/places?csw=1#TextSearchRequests
+https://codepen.io/Marnoto/pen/xboPmG - Use this as a sample for customising the Google Map infowindow
+https://dev.to/stephenafamo/how-to-create-an-autocomplete-input-with-plain-javascript - Use for autocomplete text input box.
+https://developers.google.com/places/supported_types - Google Supported Types
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-multiple-countries
+https://stackoverflow.com/questions/42135049/google-maps-autocomplete-to-restrict-places-shown-in-a-specific-country - Use this for restricting countries
+https://developers.google.com/maps/documentation/javascript/geocoding - Google Geocoding API sample JavaScript code.
+https://developers.google.com/maps/documentation/geocoding/intro?hl=en_GB
+https://developers.google.com/places/javascript/
+https://developers.google.com/maps/documentation/javascript/custom-markers#customizing_markers_by_map_features
+
+Ratings Plugins:
+http://www.learningjquery.com/2016/09/15-jquery-rating-plugins
+http://rating-widget.com/documentation/
+https://speckyboy.com/15-javascript-and-plugins-and-tutorials-for-adding-ratings/
+https://www.sitepoint.com/10-jquery-rating-plugins/
+
+API Key:
+AIzaSyBXW5TxolN3o07--5Ykl30ZxE_aMUhoE1o
+
+Lat / Long:
+Longitude: 28.0473051 Latitude: -26.204102799999998
+
+
+Reverse Geocoding API Endpoint:
+https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY
+https://maps.googleapis.com/maps/api/geocode/json?latlng=-26.10,28.26&key=AIzaSyBXW5TxolN3o07--5Ykl30ZxE_aMUhoE1o
+
+API Endpoint (With Place Id & API Key)
+https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=YOUR_API_KEY
+https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJ39jsg-5v5kcRmovVTWTmsKU&key=AIzaSyBXW5TxolN3o07--5Ykl30ZxE_aMUhoE1o
+
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&keyword=cruise&key=AIzaSyBXW5TxolN3o07--5Ykl30ZxE_aMUhoE1o
+
+API Endpoint RadarSearch (Deprecated) (With API Key)
+Vegetarian Places:
+https://maps.googleapis.com/maps/api/place/radarsearch/json?location=48.859294,2.347589&radius=5000&type=cafe&keyword=vegetarian&key=AIzaSyBIcKN0e_gbZX3DrdYNoptoyjsR-n--4pc
+
+
+Italian Places:
+https://maps.googleapis.com/maps/api/place/radarsearch/json?location=48.859294,2.347589&radius=5000&type=cafe&keyword=italian&key=AIzaSyBIcKN0e_gbZX3DrdYNoptoyjsR-n--4pc
+
+
+
+API Endpoint Nearby:
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&keyword=cruise&key=YOUR_API_KEY
+
+
+Google Reference Page:
+https://www.google.com/maps/place/Romantica+Caffe/@48.8720168,2.2907569,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa5b0e6644dd58b9a!8m2!3d48.8720168!4d2.2929456
+
+
+var autocomplete = new google.maps.places.Autocomplete(input, options);
+var result = autocomplete.getPlace();
+console.log(result); // take a look at this result object
+console.log(result.address_components); // a result has multiple address components
+
+for(var i = 0; i < result.address_components.length; i += 1) {
+  var addressObj = result.address_components[i];
+  for(var j = 0; j < addressObj.types.length; j += 1) {
+    if (addressObj.types[j] === 'country') {
+      console.log(addressObj.types[j]); // confirm that this is 'country'
+      console.log(addressObj.long_name); // confirm that this is the country name
+    }
+  }
+}
+https://stackoverflow.com/questions/8282026/how-to-limit-google-autocomplete-results-to-city-and-country-only
+
+
+Flickr Backgrounds:
+https://farm6.staticflickr.com/5151/14415235723_c01b0d2ea5_h.jpg
+
+https:\\maps.gstatic.com\mapfiles\place_api\icons\atm-71.png
