@@ -1,6 +1,24 @@
+    /* Section definition start */
+    section { 
+        display: block;
+    }
+
+    #section1 {
+        background-color: #e5e5ef;
+        color:#686868;
+    } 
+
+    /* Section definition end */
+
+    /* Input Box Clear-button start */
+    input[type=search]::-webkit-search-cancel-button {
+        -webkit-appearance: searchfield-cancel-button;
+    }
+    /* Input Box Clear-button end   */
+
     /* Navbar style*/
     .navbar {
-        background-color: #038bd9 !important; 
+        background-color: #2c3e50 !important;  /* #013243 !important; */
         color: #ffffff !important;
     }
 
@@ -20,18 +38,19 @@
     body {
         /*font-family: 'Allerta';*/
         font-size: 18px;
-        background-color: rgba(136,136,136,1);
+        background-color: #4183d7;  /* rgba(136,136,136,1); */
+        /* background-image: url('https://farm4.staticflickr.com/3031/2894074319_f8cac7dba2_b.jpg'); */
     }
 
     #list-group {
         font-size: 80%;
     }
 
-    #list-heading, #rhs-small-text {
+    #list-heading, #rhs-small-text, #footer-sm-text {
         color: firebrick;
     }
 
-    #list-group-details, #footer-sm-text {
+    #list-group-details {
         color: blue;
     }
 

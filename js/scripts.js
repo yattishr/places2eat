@@ -87,13 +87,12 @@
           $("#rhs-small-text").text("Average Rating: " + place.rating);
           // $("#footer-sm-text").text("Visit Website: " + place.website);  
           $("#list-group").fadeIn("slow");
-          // $("#link" + counter).attr('href', response.stream.channel.url);
           $("#footer-sm-text").attr('href', place.website)
           /* end populate list */            
         });
 
         // Sets a listener on a radio button to change the filter type on Places
-        // Autocomplete.
+        // Autocomplete. {Not needed anymore. y.r 2018-01-23}
         function setupClickListener(id, types) {
           var radioButton = document.getElementById(id);
           radioButton.addEventListener('click', function() {

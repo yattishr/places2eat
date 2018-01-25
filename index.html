@@ -43,44 +43,23 @@
 </header>
 <!-- Navbar component end. -->
     
-  <body>
+<body>
     <div class="container">
-      <div class="row">
-        <div class="col"><br/>
-        <!-- div class="pac-card" id="pac-card" -->
-          <!--div>
-            <div id="title">
-              Search Places-2-Eat
-            </div>
-            <div id="type-selector" class="pac-controls">
-              <input type="radio" name="type" id="changetype-all" checked="checked">
-              <label for="changetype-all">All</label>
-
-              <input type="radio" name="type" id="changetype-establishment">
-              <label for="changetype-establishment">Establishments</label>
-
-              <input type="radio" name="type" id="changetype-address">
-              <label for="changetype-address">Addresses</label>
-
-              <input type="radio" name="type" id="changetype-geocode">
-              <label for="changetype-geocode">Geocodes</label>
-            </div>
-            <div id="strict-bounds-selector" class="pac-controls">
-              <input type="checkbox" id="use-strict-bounds" value="">
-              <label for="use-strict-bounds">Strict Bounds</label>
-            </div>
-          </div-->
+      <div class="row text-input-row">
+        <div class="col"><br/>                    
           <div class="form-row">
             <div class="form-group col-md-6">
               <div class="left-inner-addon"><i class="fa fa-location-arrow" aria-hidden="true"></i>
-                <input type="text" class="form-control" id="pac-input-address" placeholder="My Location..."></div>
+                <input type="search" class="form-control" id="pac-input-address" placeholder="My Location..."></div>
             </div>
             <div class="form-group col-md-6">
-              <div class="left-inner-addon"><i class="fa fa-cutlery" aria-hidden="true"></i><input type="text" class="form-control" id="pac-input" placeholder="Search Restaurant or Cuisine..."></div>
+              <div class="left-inner-addon"><i class="fa fa-cutlery" aria-hidden="true"></i><input type="search" class="form-control" id="pac-input" placeholder="Search Restaurant or Cuisine..."></div>
             </div>
           </div>            
         </div>
         </div>
+
+        <div class="row">
         <div class="col-12">
             <div id="map"></div>
             <div id="infowindow-content">
@@ -89,7 +68,10 @@
               <span id="place-address"></span>
             </div>
         </div>
-        </br>
+        </div>
+        <br/>
+
+        <div class="row">
         <div class="col">
             <!-- List group item begin -->
             <div class="list-group" id="list-group">
@@ -99,15 +81,13 @@
                     <small id="rhs-small-text"><span class="badge badge-primary badge-pill">3 days ago</span></small>
                 </div>
                 <p class="mb-1" id="list-group-details">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                <small id="footer-sm-text">Visit Website</small>
+                <small><a href="#" id="footer-sm-text" target="_blank">Visit Website</a></small>         
               </a>
             </div>            
             <!-- List group item end -->
         </div>
+        </div>
       </div>
-    </div>
-            
-   <div class="container fluid"></div>
     <script src="js/scripts.js"></script>
-  </body>
+</body>
 </html>
